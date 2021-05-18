@@ -3,7 +3,7 @@
 using namespace std;
 int main()
 {
-    int side1,side2,side3, base,height;
+    float side1,side2,side3, base,height;
     float area,s;
      char ch;
     cout<<" For right angle triangle press 'Y' else press any key";
