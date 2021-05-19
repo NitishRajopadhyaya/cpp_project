@@ -1,3 +1,5 @@
+//Program to calculate area of triangle
+
 #include<iostream>
 #include<math.h>
 using namespace std;
