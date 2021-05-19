@@ -22,9 +22,9 @@ int main()
           {
               cout<<"Enter value of side a"<<endl;
              cin>>side1;
-             cout<<"Enter valu of side b"<<endl;
+             cout<<"Enter value of side b"<<endl;
              cin>>side2;
-             cout<<"Enter vlaue of side c"<<endl;
+             cout<<"Enter value of side c"<<endl;
              cin>>side3;
              s=(side1+side2+side3)/2;
              area =sqrt(s*(s-side1)*(s-side2)*(s-side3));
