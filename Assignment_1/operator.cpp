@@ -38,6 +38,8 @@ int main()
                
 
       //conditional operator
-             //int check;
-             (num2>num1) ? cout<<num2 : cout<<num1 ;  // here '?' and ':' are conditional operator       
+             int check;
+            check = (num1>num2) ? num2 : num1 ;  // here '?' and ':' are conditional operator       
+            cout<<check<<endl;
 }
+
