@@ -20,5 +20,5 @@ int main()
 
     cout<<"entered information"<<endl;
     //puts(s.name);
-    cout<<s.name<<"\t"<<s.roll<<"\t"<<s.address<<endl;
+    cout<<(s.name<<"\t"<<s.roll<<"\t"<<s.address<<endl;
 }
