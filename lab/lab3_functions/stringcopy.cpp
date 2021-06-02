@@ -9,7 +9,6 @@ int main()
     cout<<"enter your name"<<endl;
      gets(name);
 
-     //strcpy(name," how are you");
      strcpy(name2,name);
      
       
