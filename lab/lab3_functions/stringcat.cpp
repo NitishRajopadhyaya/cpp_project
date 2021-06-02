@@ -14,5 +14,4 @@ int main()
      
       
      cout<<"string entered is \t"<<strcat(string1,string2);
-     //cin>>copy;
-}
+     
