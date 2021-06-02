@@ -21,7 +21,7 @@ int main()
 
               if(num1==10 && num2==20)  // here && is a logical operator. Other eg ('||','!')
                   {
-                      cout<<"how are you"<<endl;
+                      cout<<"how  are you"<<endl;
                   }        
 
 
