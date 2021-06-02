@@ -19,5 +19,5 @@ using namespace std;
     float ar;
     ar=area();
     
-     cout<<"area is \t"<<ar;
+     cout<<"area is  \t"<<ar;
  }
