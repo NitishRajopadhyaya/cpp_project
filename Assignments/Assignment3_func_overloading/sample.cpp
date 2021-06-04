@@ -5,7 +5,7 @@ using namespace std;
     cout<<"addition of numbers \t"<<num1+num2;
  }
 
- void add(int num1 , double num2)
+ void add(int num1 , float num2)
  {
     cout<<"addition of numbers \t"<<num1+num2;
  }
@@ -19,7 +19,7 @@ using namespace std;
  {
      add(10,20);
      cout<<endl;
-     add(10,20.5);
+     add(10,20.5f);// f denotes float otherwises use double
      cout<<endl;
      add(10,30.5,10.5);
      cout<<endl;
