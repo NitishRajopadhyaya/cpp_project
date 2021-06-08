@@ -13,5 +13,5 @@ int main()
      gets(string2);
      
       
-     cout<<"string entered is \t"<<strcat(string1,string2);
+     cout<<"string  entered is \t"<<strcat(string1,string2);
      
