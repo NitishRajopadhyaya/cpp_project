@@ -12,6 +12,6 @@ int main()
      strcpy(name2,name);
      
       
-     cout<<"string  is \t";
+     cout<<"string   is \t";
      puts(name2);
 }
