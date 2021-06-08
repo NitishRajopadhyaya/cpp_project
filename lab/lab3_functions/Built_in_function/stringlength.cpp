@@ -12,5 +12,5 @@ int main()
      length=strlen(name);
      
       
-     cout<<"length  of string entered is \t"<<length;
+     cout<<"length of string entered is \t"<<length;
 }
