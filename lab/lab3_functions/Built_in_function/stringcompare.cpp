@@ -16,6 +16,6 @@ int main()
         cout<<"you have entered same string";
 
      else 
-        cout<<"string is  different";    
+        cout<<"string is   different";    
      
 }
