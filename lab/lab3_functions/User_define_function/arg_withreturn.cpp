@@ -12,7 +12,7 @@ using namespace std;
  int main()
  {
      float side1,side2,side3,ar,s;
-     cout<<"enter side 1"<<endl;
+     cout<<"enter  side 1"<<endl;
      cin>>side1;
      cout<<"enter side 2"<<endl;
      cin>>side2;
