@@ -8,7 +8,7 @@ using namespace std;
      cin>>side1;
      cout<<"enter side 2"<<endl;
      cin>>side2;
-     cout<<"enter side 3"<<endl;
+     cout<<"enter  side 3"<<endl;
      cin>>side3;
 
      s=(side1+side2+side3)/2;
