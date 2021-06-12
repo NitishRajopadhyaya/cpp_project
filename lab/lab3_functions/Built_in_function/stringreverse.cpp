@@ -9,4 +9,3 @@ int main()
     gets(string1);
      cout<<"reversed string is \t"<<strrev(string1);
 
-}
