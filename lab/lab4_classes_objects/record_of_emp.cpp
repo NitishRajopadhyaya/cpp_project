@@ -38,7 +38,7 @@ using namespace std;
      Employee E[5];;
      for(int i=0;i<5;i++)
        {
-           cou<<"Enter details of Employee \t"<< i+1;
+           cout<<"Enter details of Employee \t"<< i+1<<Endl;
            E[i].inputdata();
        }
   cout<<"Name \t"<<" Id \t"<<"salary \t"<<endl;
