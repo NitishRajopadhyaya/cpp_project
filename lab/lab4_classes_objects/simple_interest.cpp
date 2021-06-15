@@ -3,7 +3,7 @@ using namespace std;
 class Interest
 {
     private:
-      float ,SI;
+      float SI;
 
     public:
         
@@ -14,7 +14,7 @@ class Interest
             SI=(per*tim*r)/100;
         }     
 
-         void calulation(double per , double tim ,double rate=15)
+         void calulation(double per , double tim ,float rate=15.0f)
         {
              
             
@@ -43,7 +43,7 @@ int main()
                 if(ch=='Y'|| ch=='y')
                 {
                     cout<<"enter rate";
-                    cin>>Rate1;
+                    cin>>rate1;
                     I1.calulation(percentage,time,rate1);
                 }
 
