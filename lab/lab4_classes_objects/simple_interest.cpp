@@ -3,14 +3,10 @@ using namespace std;
 class Interest
 {
     private:
-      float rate,SI;
+      float ,SI;
 
     public:
-        Interest()
-         {
-             rate=15;
-         } 
-
+        
        void calulation(double per , double tim , double r)
         {
              
@@ -18,7 +14,7 @@ class Interest
             SI=(per*tim*r)/100;
         }     
 
-         void calulation(double per , double tim )
+         void calulation(double per , double tim ,double rate=15)
         {
              
             
