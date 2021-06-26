@@ -31,11 +31,12 @@ float average(Sample S1) // function having object as an paramtere
 int main()
 {
     Sample S1;
-    Sample S2;
 
     S1.getdata();
 
     cout<<"Average is :"<<average(S1)<<endl; // here average(S1) calls function "float average (sample S1)"
+
+   //Sample S2;
    //cout<<"average is "<<S2.average(S1);  normally we do this 
 
 }
