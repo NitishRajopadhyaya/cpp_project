@@ -30,6 +30,7 @@ class Unary
 };
 int main()
 {
+     
      Unary U1;
 
      U1.getdata(12,-35,24);
