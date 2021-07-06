@@ -13,9 +13,9 @@ class Unary
 
       }
 
-      void operator ++() //returntype operator op()
+      void operator ++() //returntype operator symbol()
       {
-           num1 = ++num1 ;
+           num1 = ++num1 ;  // increases value of num1 by 1
            num2 = ++num2 ;
            num3 = ++num3 ;
       }
@@ -34,7 +34,7 @@ int main()
 
      U1.getdata(12,-35,24);
      //U1.operator-();
-      ++U1;
+      ++U1; // can be called using operator
      U1.display(); 
 
 }
