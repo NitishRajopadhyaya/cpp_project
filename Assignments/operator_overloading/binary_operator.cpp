@@ -32,12 +32,6 @@ class Binary
             return temp;
         }
 
-       /* Binary operator +(Binary B1 , Binary B2 )
-        {
-           temp.num1 = num1 + B1.num1 + B2.num1;
-           temp.num1 = num1 + B1.num2 + B2.num2;
-        }*/
-
         void display()
         {
             cout<<"Addition of first numbers "<<num1<<endl;
@@ -49,15 +43,16 @@ int main()
 {
     Binary B1(10,15);
     Binary B2(25,30);
-    Binary B3 (10,10);
-    Binary B4 , B5;
+    Binary B3 ;
+
+    //if BInary B3(10,10);
+    //Binary B4 ;
     
-    B5 = B1 + B2;
-    B4 = B1 + B2 +B3;
+    B3 = B1 + B2;
+      
+   B3.display();
 
-    B5.display();
-    B4.display();
-
-    //cout<<"ADDITION  of number is  "<<B3;
+   // B4 = B1 + B2 + B3;  first add B2 + B3 and then sum of these two adds with B1
+      //B4.disp;ay();    
 
 }
