@@ -11,8 +11,8 @@ using namespace std;
      public:
         distances()
         {
-            feet=0;
-            inch=0;
+           this->feet=0;
+            this->inch=0;
         }
 
         distances( int feet1 , int inch1)
