@@ -8,7 +8,7 @@
 
      public:
 
-         friend distances operator +(distances &d1 , distances &d2);
+         friend distances operator +(distances &d1 , distances &d2); /// needs two parameter
          distances()
          {
              this->inch=0;
