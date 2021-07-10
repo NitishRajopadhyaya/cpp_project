@@ -7,7 +7,7 @@ using namespace std;
 
              char name[20];
              int  roll;
-            // double physics , Maths , Computer ,Total_percent;
+             // double physics , Maths , Computer ,Total_percent;
              //int  Attendence;
 
             public:
@@ -67,6 +67,7 @@ using namespace std;
  class ALL_info : public marks , public Attendence_info 
  {
         int Total_percent;
+
       public:
             void calc()
              {
@@ -88,14 +89,7 @@ using namespace std;
                 cout<<endl;
             } 
 
-          /*  void display_name()
-           {
-                cout<<"Students name : "<<this->name;
-                cout<<endl;
-
-                cout<<"Students roll : "<<this->roll;
-                cout<<endl;
-           } */
+         
 };
 
 int main()
@@ -105,8 +99,7 @@ int main()
 
    // M1.get_name();
      
-      A1.get_name();  // should use virtual in class marks and Attendence_info to access get_name function of class student
-
+    A1.get_name();  // should use virtual in class marks and Attendence_info to access get_name function of class student
     A1.getmarks();
     A1.get_attendence();
 
@@ -114,7 +107,7 @@ int main()
 
    // M1.display_name();
     A1.calc();
-   // A1.display_name();
+   
     A1.display();
 }
 
