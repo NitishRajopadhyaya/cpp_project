@@ -23,7 +23,7 @@ using namespace std;
  };
 
 
- class marks : public Student
+ class marks : public  virtual Student
  {
      protected:
          double physics , Maths , Computer;
@@ -42,7 +42,7 @@ using namespace std;
           }           
  };
 
- class Attendence_info : public Student
+ class Attendence_info : public virtual Student
  {
      protected:
        int  Attendence;
@@ -54,14 +54,14 @@ using namespace std;
                cin>>this->Attendence;
            }
 
-           void display_name()
+          /* void display_name()
            {
                 cout<<"Students name : "<<this->name;
                 cout<<endl;
 
                 cout<<"Students roll : "<<this->roll;
                 cout<<endl;
-           }   
+           } */  
  };
 
  class ALL_info : public marks , public Attendence_info 
@@ -75,7 +75,11 @@ using namespace std;
 
             void display()
             {
-               
+                cout<<"Students name : "<<this->name;
+                cout<<endl;
+
+                cout<<"Students roll : "<<this->roll;
+                cout<<endl;
 
                 cout<<"No of days attended :"<<this->Attendence;
                 cout<<endl;
@@ -83,23 +87,34 @@ using namespace std;
                 cout<<"Total percentage :"<<this->Total_percent;
                 cout<<endl;
             } 
+
+          /*  void display_name()
+           {
+                cout<<"Students name : "<<this->name;
+                cout<<endl;
+
+                cout<<"Students roll : "<<this->roll;
+                cout<<endl;
+           } */
 };
 
 int main()
 {
     ALL_info A1;
-    Attendence_info M1;
+   // Attendence_info M1;
 
-    M1.get_name();
+   // M1.get_name();
      
-    //  A1.get_name();
+      A1.get_name();  // should use virtual in class marks and Attendence_info to access get_name function of class student
+
     A1.getmarks();
     A1.get_attendence();
 
     system("cls");
 
-    M1.display_name();
+   // M1.display_name();
     A1.calc();
+   // A1.display_name();
     A1.display();
 }
 
