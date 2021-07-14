@@ -11,7 +11,7 @@ class person
          void getdata()
          {
              cout<<"Enter name of person: "<<endl;
-             cin>>this->name;
+             cin.getline(this->name,20);
 
              cout<<"Enter code of person: "<<endl;
              cin>>this->code;
