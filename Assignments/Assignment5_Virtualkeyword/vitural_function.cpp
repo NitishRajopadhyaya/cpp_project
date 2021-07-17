@@ -20,7 +20,7 @@ class derived : public base
     public:
         void func()
         {
-            cout<<"function of derived class "<<endl;
+             cout<<"function of derived class "<<endl;
         }
 };
 
