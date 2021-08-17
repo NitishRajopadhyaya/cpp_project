@@ -21,22 +21,22 @@ class Stack
           {
               if(top>=Max-1)
                  throw Overflow();
-              else
-              {
+               else
+               {  
                   arr[++top]=data;  
                   cout<<"Stack added"<<endl;;
-              }
+               }
           }
 
           int pop()
           {
-              if(top==-1)
+             if(top==-1)
                 throw empty();
-              else
-              {   
-                return arr[top--];
+             else
+              {      
+                 return arr[top--];
               
-              }
+              }  
           }
 
 };
