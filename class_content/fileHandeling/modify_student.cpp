@@ -25,83 +25,73 @@ class Student
     
      void edit()
      {
-         fstream file;
-         file.open("Student.dat",ios::in|ios::out|ios::binary);
-         file.seekg(0,ios::end);
-         
-         
-         cout<<"Enter Name";
-         cin>>this->name;
-         file.write(reinterpret_cast<char*>(this),sizeof(*this));
-      file.close();
+         char nm[20];
+
+         cout<<"Details of given roll"<<endl;
+         cout<<"Roll no"<<roll<<endl;
+         cout<<"name :"<<this->name<<endl;
+
+         cout<<"Enter new name";
+         cin>>nm;
+
+         strcpy(name,nm);
 
      }
+    
 };
 
 int main()
 {
     char ch='n';
-    char name[20];
-  Student s[3];
+    
+  Student s;
+  Student S1;
+  Student S2;
   fstream fin;
-  int roll;
+  int roll ;
+  long pos;
   
   fin.open("Student.dat",ios::in|ios::out|ios::binary);
   cout<<"roll"<<"\t"<<"Name"<<endl;
   cout<<endl;
    for(int i=0;i<3;i++)
    {
-       fin.read((char*)&s[i],sizeof(s[i]));
+       fin.read((char*)&s,sizeof(s));
        
-       s[i].displaydata();
+       S2.displaydata();
    }
 
-   cout<<"Do you want to modify information? Y/N"<<endl;
-    cin>>ch;
-
-    while (ch=='y'||ch=='Y')
-    {
-        fin.open("Student.dat",ios::in|ios::out);
-        for(int i=0;i<3;i++)
-        {
-            fin.read((char*)&s[i],sizeof(s[i]));
-            s[i].displaydata();
-        }
+   
 
         cout<<"Enter the roll you want to modify"<<endl;
         cin>>roll;
 
-          for (int i = 0; i < 3 ;i++)
-          {
-              fin>>s[i].roll;
+        while(!fin.eof())
+        {
+            pos=fin.tellg();
+            fin.read((char*)&s,sizeof(s));
+            if(s.roll==roll)
+            {
+                s.edit();
+        
 
-              if(s[i].roll==roll)+
-              {
-                  fin>>s[i].name;
-                  int pos = fin.seekg(20,ios::cur);
-                    cout<<pos;
-                  cout<<"Roll Number "<<s[i].roll<<endl;
-                  cout<<"Name  "<<s[i].name<<endl;
+            fin.seekg(pos);
+            fin.write((char*)&s,sizeof(s));
+            break;
 
-                  cout<<"Enter modification"<<endl;
-                  s[i].edit();
+            }
+        }
+  fin.seekg(0);
 
-                //   strcpy(s[i].name,name);
+  cout<<"Now modification is"<<endl;
 
-                //   fin.seekp(pos);
+  while(!fin.eof())
+  {
+      fin.read((char*)&S1,sizeof(S1));
+      S1.displaydata();
+  }
 
-                //   fin<<s[i].roll;
-                //   fin<<s[i].name;
+fin.close();
+return 0;
 
-
-              }
-          }
-          
-        fin.close();   
-
-        cout<<"Do you want to modify again? Y/N"<<endl;
-        cin>>ch;
-    }
-    
-   
 }
