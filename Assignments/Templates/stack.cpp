@@ -1,5 +1,6 @@
 #include<iostream>
 using namespace std;
+
 const int Max =20;
  template<class temp>
   
